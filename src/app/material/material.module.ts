@@ -1,19 +1,36 @@
 
-import { NgModule        } from '@angular/core';
-import { CommonModule    } from '@angular/common';
-
+import { NgModule     } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MATERIAL_COMPATIBILITY_MODE,
-  MatButtonModule 
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatToolbarModule
 } from '@angular/material';
 
 @NgModule({
   imports: [
+    BrowserAnimationsModule,
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatIconModule,  
+    MatInputModule,
+    MatToolbarModule
   ],
   exports: [
-    MatButtonModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatIconModule,  
+    MatInputModule,
+    MatToolbarModule
   ],
   providers: [
     { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }

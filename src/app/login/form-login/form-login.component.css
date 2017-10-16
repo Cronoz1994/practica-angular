@@ -1,0 +1,27 @@
+
+.login-card {
+  width: 400px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.error {
+  color: red;
+}
+
+.mat-card-header {
+  padding-top: 10px;
+}
